@@ -1,0 +1,54 @@
+# --- Entornos Virtuales y Dependencias ---
+.venv/
+venv/
+env/
+bin/
+lib/
+share/python-wheels/
+*.egg-info/
+dist/
+build/
+
+# --- Jupyter Notebooks ---
+# Archivos temporales de guardado automático
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# Configuración local de Jupyter (extensiones, etc.)
+.jupyter/
+
+# --- Datos y Almacenamiento (¡Muy importante!) ---
+# Nunca subas datasets pesados (CSV, JSON, Parquet, etc.)
+# Es mejor documentar cómo obtenerlos o usar DVC.
+data/
+datasets/
+*.csv
+*.xlsx
+*.parquet
+*.pickle
+*.h5
+*.sql
+*.sqlite
+
+# --- Modelos y Salidas ---
+# Evita subir archivos binarios pesados de modelos entrenados
+models/*.pkl
+models/*.joblib
+models/*.h5
+models/*.onnx
+outputs/
+reports/figures/
+
+# --- Configuración y Secretos ---
+.env
+.python-version
+config.yaml
+secrets.json
+*.log
+
+# --- Sistema Operativo ---
+.DS_Store
+Thumbs.db
+__pycache__/
+*.py[cod]
+*$py.class
